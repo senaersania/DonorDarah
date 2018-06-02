@@ -1,13 +1,13 @@
 public class Particle {
     private double fitness;
-    private Velocity velocity;
-    private Position position;
+    private double[] velocity;
+    private double[] position;
 
     public Particle() {
         super();
     }
 
-    public Particle(double fitness, Velocity velocity, Position position) {
+    public Particle(double fitness, double[] velocity, double[] position) {
         super();
         this.fitness = fitness;
         this.velocity = velocity;
@@ -22,19 +22,19 @@ public class Particle {
         this.fitness = fitness;
     }
 
-    public Velocity getVelocity() {
+    public double[] getVelocity() {
         return velocity;
     }
 
-    public void setVelocity(Velocity velocity) {
+    public void setVelocity(double[] velocity) {
         this.velocity = velocity;
     }
 
-    public Position getPosition() {
+    public double[] getPosition() {
         return position;
     }
 
-    public void setPosition(Position position) {
+    public void setPosition(double[] position) {
         this.position = position;
     }
 }

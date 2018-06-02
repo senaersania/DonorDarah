@@ -2,6 +2,7 @@ public class Parameter {
     private double lambda;
     private double gamma;
     private double c;
+    private double sigma;
 
     public double getLambda() {
         return lambda;
@@ -35,5 +36,4 @@ public class Parameter {
         this.sigma = sigma;
     }
 
-    private double sigma;
 }

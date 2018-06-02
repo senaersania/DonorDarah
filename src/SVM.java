@@ -5,11 +5,11 @@ public class SVM {
     private double sigma;
     private double fitness;
 
-    public SVM(Parameter parameter) {
-        this.lambda = parameter.getLambda();
-        this.gamma = parameter.getGamma();
-        this.c = parameter.getC();
-        this.sigma = parameter.getSigma();
+    public SVM(double[] parameter) {
+        this.lambda = parameter[0];
+        this.gamma = parameter[1];
+        this.c = parameter[2];
+        this.sigma = parameter[3];
     }
 
     public double getFitness() {
